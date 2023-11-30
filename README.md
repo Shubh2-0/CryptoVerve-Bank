@@ -3,7 +3,7 @@
 Welcome to CryptoVerve Bank - an advanced Java-based banking system designed to provide a comprehensive and secure platform for financial transactions.
 
 
-
+![Gameplay Demo](poster.png)
 
 ## Introduction
 

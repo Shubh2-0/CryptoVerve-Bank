@@ -20,10 +20,11 @@ public class UserDaoImpl implements UserDao {
 		User  user = emf.find(User.class, id);
 		
 		if(user==null)
-			throw new UserException("User is not found this that id "+id);
+			throw new UserException("User is not found with that id "+id);
 		
 		emf.getTransaction().begin();
 		user.setBalance(user.getBalance()+money);
+		emf.getTransaction().commit();
 		emf.close();
 		return true;
 	}
@@ -36,7 +37,7 @@ public class UserDaoImpl implements UserDao {
 		User  user = emf.find(User.class, id);
 		
 		if(user==null)
-			throw new UserException("User is not found this that id "+id);
+			throw new UserException("User is not found with that id "+id);
 		
 		if(user.getTransactions() == null || user.getTransactions().size()==0)
 			throw new TransactionException("No transaction found with that user : "+id);
@@ -52,7 +53,7 @@ EntityManager emf = DB_Utils.getConnection();
 		User  user = emf.find(User.class, id);
 		
 		if(user==null)
-			throw new UserException("User is not found this that id "+id);
+			throw new UserException("User is not found with that id "+id);
 		
 		
 		return user.getBalance();

@@ -27,7 +27,7 @@ public class Signup2 extends JFrame implements ActionListener{
         this.formno = formno;
         setTitle("NEW ACCOUNT APPLICATION FORM - PAGE 2");
         
-        l1 = new JLabel("Page 2: Additonal Details");
+        l1 = new JLabel("Page 2: Additional Details");
         l1.setFont(new Font("Raleway", Font.BOLD, 22));
         
         l2 = new JLabel("Religion:");
@@ -109,12 +109,12 @@ public class Signup2 extends JFrame implements ActionListener{
         c3.setBackground(Color.WHITE);
         c3.setFont(new Font("Raleway", Font.BOLD, 14));
         
-        String education[] = {"Non-Graduate","Graduate","Post-Graduate","Doctrate","Others"};
+        String education[] = {"Non-Graduate","Graduate","Post-Graduate","Doctorate","Others"};
         c4 = new JComboBox(education);
         c4.setBackground(Color.WHITE);
         c4.setFont(new Font("Raleway", Font.BOLD, 14));
         
-        String occupation[] = {"Salaried","Self-Employmed","Business","Student","Retired","Others"};
+        String occupation[] = {"Salaried","Self-Employed","Business","Student","Retired","Others"};
         c5 = new JComboBox(occupation);
         c5.setBackground(Color.WHITE);
         c5.setFont(new Font("Raleway", Font.BOLD, 14));
